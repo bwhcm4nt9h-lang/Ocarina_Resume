@@ -1,0 +1,32 @@
+.app {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, rgba(104, 138, 255, 0.18), transparent 55%),
+                radial-gradient(circle at bottom, rgba(70, 210, 255, 0.12), transparent 60%),
+                #060914;
+        color: var(--text-primary);
+}
+
+.wrapper {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 5vw, 3.5rem) 6rem;
+        display: grid;
+        gap: clamp(3rem, 6vw, 6rem);
+}
+
+.sectionDivider {
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+        border: none;
+}
+
+.footer {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 0 clamp(2rem, 5vw, 3rem) clamp(1.5rem, 5vw, 3.5rem);
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+}

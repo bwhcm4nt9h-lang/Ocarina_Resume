@@ -1,143 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-		/>
-		<meta
-			name="description"
-			content="Play ocarina songs from the Zelda series in your browser."
-		/>
-		<meta name="author" content="vaexenc" />
-		<meta property="og:title" content="Ocarina Songs" />
-		<meta
-			property="og:description"
-			content="Play ocarina songs from the Zelda series in your browser."
-		/>
-		<meta property="og:image" content="https://i.imgur.com/UITxoYP.png" />
-		<meta property="twitter:card" content="summary" />
-		<meta property="twitter:image" content="https://i.imgur.com/UITxoYP.png" />
-		<meta property="twitter:title" content="Ocarina Songs" />
-		<meta property="twitter:creator" content="@vaexenc" />
-		<meta name="darkreader" content="NO-DARKREADER-PLUGIN" />
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<title>Ocarina Songs</title>
+        <head>
+                <meta charset="UTF-8" />
+                <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+                />
+                <meta
+                        name="description"
+                        content="Interactive resume for Link Rivers — engineering leader crafting thoughtful web experiences."
+                />
+                <meta name="author" content="Link Rivers" />
+                <meta property="og:title" content="Link Rivers · Interactive Resume" />
+                <meta
+                        property="og:description"
+                        content="Explore an interactive resume with experience timelines, skill filters, and project spotlights."
+                />
+                <meta property="og:image" content="https://i.imgur.com/UITxoYP.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:image" content="https://i.imgur.com/UITxoYP.png" />
+                <meta property="twitter:title" content="Link Rivers · Interactive Resume" />
+                <meta name="darkreader" content="NO-DARKREADER-PLUGIN" />
+                <link rel="icon" href="favicon.ico" type="image/x-icon" />
+                <title>Link Rivers · Interactive Resume</title>
 
-		<style>
-			body {
-				background-color: black;
-				margin: 0;
-			}
+                <style>
+                        body {
+                                background-color: #060914;
+                                color: #f7f8ff;
+                                margin: 0;
+                                font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                        }
 
-			@font-face {
-				font-family: "Press Start 2P";
-				src: url("fonts/press-start-2p/PressStart2P.woff2") format("woff2"),
-					url("fonts/press-start-2p/PressStart2P.woff") format("woff"),
-					url("fonts/press-start-2p/PressStart2P.ttf") format("truetype"),
-					url("fonts/press-start-2p/PressStart2P.svg#PressStart2P") format("svg");
-				font-display: block;
-			}
+                        .noscript-content {
+                                max-width: 480px;
+                                margin: 3rem auto;
+                                padding: 2rem;
+                                border-radius: 16px;
+                                border: 1px solid rgba(255, 255, 255, 0.2);
+                                background: rgba(12, 16, 32, 0.85);
+                                box-shadow: 0 24px 45px rgba(6, 12, 32, 0.45);
+                                text-align: center;
+                        }
 
-			.noscript-content {
-				position: relative;
-				width: fit-content;
-				margin: 3em auto 0;
-				padding-left: 0.55ch;
-				font-family: "Press Start 2P", monospace, sans-serif;
-				font-size: 8px;
-				line-height: 1;
-				letter-spacing: -0.14em;
-				padding-bottom: 2.5em;
-				color: white;
-				font-size: 2.75vmin;
-			}
+                        .noscript-content h1 {
+                                margin: 0 0 1rem;
+                                font-size: 1.4rem;
+                        }
 
-			.noscript-content *::selection {
-				background-color: white;
-				color: black;
-			}
-
-			.noscript-content a {
-				color: white !important;
-				text-decoration: none !important;
-			}
-
-			.noscript-content .border {
-				position: absolute;
-				top: 1em;
-				left: 0;
-				user-select: none;
-			}
-
-			.noscript-content .border > div {
-				margin-bottom: 0.3em;
-			}
-
-			.noscript-content .text-line {
-				margin: 0;
-			}
-
-			.noscript-content .text-line-2 {
-				margin-top: 0.66em;
-				margin-left: 11ch;
-			}
-
-			.noscript-content .text-line-3 {
-				margin-left: 2.5ch;
-				margin-top: 22em;
-			}
-
-			.noscript-content .text-line-4 {
-				margin-left: 5ch;
-			}
-
-			.noscript-content .text-line-5 {
-				margin-left: 4ch;
-			}
-		</style>
-	</head>
-	<body>
-		<noscript>
-			<div class="noscript-content">
-				<p class="text-line text-line-1">Callback (1) 80008ee8 00000000 00000000</p>
-				<p class="text-line text-line-2">I LOVE YOU 00000000</p>
-				<p class="text-line text-line-3">
-					ROM_F [Creator:<a href="https://github.com/vaexenc" target="_blank"
-						>vaexenc@github</a
-					>]
-				</p>
-				<p class="text-line text-line-4">[Date:$inject:date]</p>
-				<p class="text-line text-line-5">OCARINA 00000000 00000000</p>
-
-				<div class="border">
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-					<div>:</div>
-				</div>
-			</div>
-		</noscript>
-		<div id="root"></div>
-		<script type="module" src="/src/main.tsx"></script>
-	</body>
+                        .noscript-content p {
+                                margin: 0;
+                                line-height: 1.6;
+                                color: #c4cae2;
+                        }
+                </style>
+        </head>
+        <body>
+                <noscript>
+                        <div class="noscript-content">
+                                <h1>JavaScript required</h1>
+                                <p>
+                                        This interactive resume relies on JavaScript for animations and filtering. Please enable it to explore the full
+                                        experience.
+                                </p>
+                        </div>
+                </noscript>
+                <div id="root"></div>
+                <script type="module" src="/src/main.tsx"></script>
+        </body>
 </html>
