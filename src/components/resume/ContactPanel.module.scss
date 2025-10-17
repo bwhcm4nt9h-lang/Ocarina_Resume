@@ -1,0 +1,131 @@
+.contactSection {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+}
+
+.contactGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: clamp(1.5rem, 3vw, 3rem);
+}
+
+.availabilityCard,
+.contactCard {
+        border-radius: 24px;
+        padding: clamp(1.75rem, 2vw, 2.5rem);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(18, 22, 36, 0.9);
+        box-shadow: 0 24px 50px rgba(12, 20, 44, 0.38);
+        display: grid;
+        gap: 1rem;
+}
+
+.availabilityCard h3 {
+        font-size: 1.3rem;
+        margin: 0;
+        color: var(--text-primary);
+}
+
+.availabilityCard p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin: 0;
+}
+
+.toggleGroup {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+}
+
+.toggle {
+        padding: 0.75rem 1.1rem;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(12, 15, 25, 0.6);
+        color: var(--text-secondary);
+        transition: transform 0.2s ease, border 0.2s ease, background 0.2s ease;
+}
+
+.toggle:hover,
+.toggle:focus-visible {
+        transform: translateY(-2px);
+        border-color: rgba(255, 255, 255, 0.2);
+}
+
+.toggleActive {
+        background: linear-gradient(120deg, rgba(96, 126, 255, 0.85), rgba(69, 209, 255, 0.85));
+        color: #080e21;
+        font-weight: 600;
+}
+
+.availabilitySummary {
+        background: rgba(98, 126, 255, 0.1);
+        border-left: 3px solid var(--accent);
+        padding: 0.9rem 1.1rem;
+        border-radius: 0 16px 16px 0;
+        color: var(--text-primary);
+        line-height: 1.6;
+}
+
+.contactCard {
+        position: relative;
+}
+
+.emailRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.label {
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+}
+
+.copyButton {
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+        color: var(--text-primary);
+}
+
+.copyButton:hover,
+.copyButton:focus-visible {
+        background: rgba(255, 255, 255, 0.2);
+}
+
+.emailLink {
+        font-size: clamp(1.5rem, 2.4vw, 2rem);
+        color: var(--text-primary);
+        font-weight: 700;
+}
+
+.contactCard p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin: 0;
+}
+
+.socialRow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+}
+
+.socialRow a {
+        color: var(--accent-light);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+}
+
+.socialRow a:hover,
+.socialRow a:focus-visible {
+        color: var(--accent);
+}
